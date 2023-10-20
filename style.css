@@ -175,6 +175,8 @@ section {
 
 .logo-pic {
     border-radius: 2rem;
+    height: 250px;
+    width: 275px;
 }
 
 .section__pic-container {
