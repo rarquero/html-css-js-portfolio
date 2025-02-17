@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<!-- AOS Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
 <body>
     <nav id="desktop-nav">
         <div class="logo">Russell Arquero</div>
@@ -37,27 +43,28 @@
             </div>
         </div>
     </nav>
-    <section id="profile">
+    <section id="profile" class="parallax">
         <div class="section__pic-container">
             <!-- Resized Image -->
             <img src="./assets/temple-cerulean-tP8ZwlCF8og-unsplash.jpg"
             width="400"
             height="375"
             class="logo-pic"
-            alt="splash pic">
+            alt="splash pic"
+            data-aos="fade-right" data-aos-delay="400">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Russell Arquero</h1>
-            <p class="section__text__p2">Software Engineer</p>
-            <div class="btn-container">
+            <p class="section__text__p1" data-aos="fade-left" data-aos-delay="200">Hello, I'm</p>
+            <h1 class="title" data-aos="fade-up" data-aos-delay="400">Russell Arquero</h1>
+            <p class="section__text__p2" data-aos="fade-left" data-aos-delay="600">Software Engineer</p>
+            <div class="btn-container" data-aos="zoom-in" data-aos-delay="800">
                 <!-- Add own resume here -Filler for now -->
                 <button class="btn btn-color-2" onclick="window.open('./assets/Russell_Arquero_Resume.pdf')">
                 Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
                 Contact Info</button>
             </div>
-            <div id="socials-container">
+            <div id="socials-container" data-aos="fade-up" data-aos-delay="1000">
                 <img src="./assets/linkedin.png" alt="my linkedin profile"
                 class="icon" onclick="location.href='https://www.linkedin.com/in/russell-arquero'">
                 <img src="./assets/github.png" alt="my github profile"
@@ -65,13 +72,13 @@
             </div>
         </div>
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow"
-        onclick="location.href='./#about'"
+        onclick="location.href='./#about'" data-aos="fade-down" data-aos-delay="1200"
         />
     </section>
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
+        <p class="section__text__p1" data-aos="fade-right">Get To Know More</p>
+        <h1 class="title" data-aos="fade-up">About Me</h1>
+        <div class="section-container" data-aos="zoom-in">
             <div class="section__pic-container">
                 <img src="./assets/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg"
                 alt="minimalist keyboard"
@@ -84,8 +91,13 @@
                         <img src="./assets/experience.png" alt="experience icon" 
                         class="icon"
                         />
-                        <h3>Experience</h3>
-                        <p>Data Structures & Algorithms</p>
+                        <h3>Coursework</h3>
+                        <p>Application Development</p>
+                        <p>Computing Theory</p>
+                        <p>Artificial Intelligence</p>
+                        <p>Design/Analysis of Algorithms</p>
+                        <p>Computer System & Networks</p>
+                        <p>Computer Simulations</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" alt="education icon" 
@@ -96,8 +108,8 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Student at University of the Pacific. Motivated and hardworking individual with the drive to further learn new technologies.
-                        Good foundation in Python and eager to learn more about Machine Learning/Deep Learning.
+                    <p data-aos="fade-left">Student at University of the Pacific. Motivated individual with the drive to further learn new technologies.
+                        Good foundation in Python and eager to learn more about Artificial Intelligence and Machine Learning.
                     </p>
                 </div>
             </div>
@@ -239,5 +251,10 @@
     </footer>
     <!-- Reference & Link to the script js-->
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 </body>
 </html>
